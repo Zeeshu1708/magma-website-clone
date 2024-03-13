@@ -1,5 +1,100 @@
-*{
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+main {
+    position: relative;
+    overflow: hidden;
+}
+
+#page1 {
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    background-color: red;
+}
+
+#page1>video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#page1>nav {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px 60px;
+    width: 100%;
+    height: 10vh;
+}
+
+#page1>nav>img {
+    width: 4vw;
+}
+
+.right-nav {
+    display: flex;
+    gap: 20px;
+}
+
+.right-nav button {
+    font-size: 13px;
+    font-weight: 600;
+    padding: 12px 24px;
+    border-radius: 20px;
+    color: #fff;
+    background-color: transparent;
+    border: .5px solid #ffffff6f;
+}
+
+#page1>.page1-headings {
+    position: absolute;
+    bottom: 7vh;
+    left: 12vw;
+}
+
+#page1>.page1-headings h1 {
+    color: #fff;
+    width: 41vw;
+    font-size: 5.9vw;
+    font-weight: 300;
+}
+
+#page1>.page1-headings>.page1-headings-inner {
+    display: flex;
+    align-items: end;
+    justify-content: space-between;
+    padding: 2.5vw 0;
+}
+
+.page1-headings-inner>p {
+    color: #fff;
+    font-size: 1.3vw;
+    font-weight: 300;
+    width: 28vw;
+}
+
+.page1-headings-inner>button {
+    color: #214ED3;
+    background-color: #fff;
+    width: 180px;
+    height: 50px;
+    font-size: 17px;
+    border-radius: 50px;
+    border: none;
 }
